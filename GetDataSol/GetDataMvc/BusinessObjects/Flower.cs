@@ -3,15 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace GetDataMvc.BusinessObjects
 {
+
+    [Table("F_FLOWER")]
     public class Flower
     {
 
+        [Key]
+        [Column("ID")]
         public int ID { get; set; }
 
+        [Column("SPECIES")]
         public string Species { get; set; }
 
+        [Column("PREVAILING_COLOR")]
         public Color PrevailingColor { get; set; }
 
 
