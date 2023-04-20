@@ -21,6 +21,19 @@ namespace GetDataMvc.BusinessObjects
         public string Species { get; set; }
 
         [Column("PREVAILING_COLOR")]
+        public string ColorInDB
+        {
+            get
+            {
+                return this.PrevailingColor.ToString();
+            }
+            set
+            {
+                this.PrevailingColor = (Color) Enum.Parse(typeof(Color), value);
+            }
+        }
+
+        [NotMapped]
         public Color PrevailingColor { get; set; }
 
 
