@@ -13,6 +13,7 @@ namespace GetDataMvc.BusinessObjects
         Orange,
         Purple,
         Magenta,
+        Lilac,
         Red,
         Green,
         Blue,

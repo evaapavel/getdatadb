@@ -26,6 +26,7 @@ namespace GetDataMvc.ORM
             //    + "Server=DELL-PC\\SQL2014SP3; "
             //    + "Database=FlowerDB; "
             //    + "Trusted_Connection=True; "
+            //    + "TrustServerCertificate=True; "
             //);
 
             // Azure

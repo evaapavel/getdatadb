@@ -14,15 +14,21 @@
     <tr>
         @* <th>ID</th> *@
         <th>Species</th>
+        <th><div style="width: 10px;"></div></th>
         @* <th>Prevailing Color</th> *@
+        <th>Prevailing Color</th>
     </tr>
     @foreach (Flower flower in this.Model.Flowers)
     {
-        <tr>
-            @* <td>@flower.ID</td> *@
-            <td><a href="/flowers/detail/@flower.ID">@flower.Species</a></td>
-            @* <td>@flower.PrevailingColor</td> *@
-        </tr>
+<tr>
+    @* <td>@flower.ID</td> *@
+    <td><a href="/flowers/detail/@flower.ID">@flower.Species</a></td>
+    <td></td>
+    @* <td>@flower.PrevailingColor</td> *@
+    @* <td><div style="width: 100px; height: 100px; color: @(flower.PrevailingColor.ToString().ToLower())"></div></td> *@
+    @* <td><div style="width: 50px; height: 50px; background-color: @(flower.PrevailingColor.ToString().ToLower());"></div></td> *@
+    <td><div style="width: 50px; height: 50px; background-color: @(ColorHelper.ToHtmlColor(flower.PrevailingColor));"></div></td>
+</tr>
     }
 </table>
 

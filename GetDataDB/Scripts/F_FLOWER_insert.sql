@@ -73,3 +73,33 @@ INSERT INTO
 
 
 
+INSERT INTO
+  F_FLOWER
+  (
+    -- ID,
+    SPECIES,
+    PREVAILING_COLOR
+  )
+  SELECT
+    -- 5             AS ID,
+    N'Primrose'   AS SPECIES,
+    'Yellow'      AS PREVAILING_COLOR
+;
+
+
+
+INSERT INTO
+  F_FLOWER
+  (
+    -- ID,
+    SPECIES,
+    PREVAILING_COLOR
+  )
+  SELECT
+    -- 5             AS ID,
+    N'Orchid'     AS SPECIES,
+    'Lilac'       AS PREVAILING_COLOR
+;
+
+
+
