@@ -20,8 +20,8 @@ namespace GetDataMvc.Controllers
 
         public IActionResult Index()
         {
-            //return View();
-            return Redirect("/flowers/list");
+            return View();
+            //return Redirect("/flowers/list");
         }
 
         public IActionResult Privacy()
