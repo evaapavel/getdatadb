@@ -31,7 +31,7 @@ namespace GetDataMvc.ORM
             // Azure
             optionsBuilder.UseSqlServer(
                 ""
-                + "Server=evaapavel-getdatadb-mssql.database.windows.net; "
+                + "Server=tcp:evaapavel-getdatadb-mssql.database.windows.net; "
                 + "Authentication=Active Directory Default; "
                 + "Database=FlowerDB; "
             );
